@@ -1,30 +1,20 @@
 <!DOCTYPE html><html><meta charset="utf-8">
 <meta name="Keywords" content="food, order, ordering, app, pizza, burger, taco, sandwich, oriental"/>
 <meta name="Description" content="A food ordering web app"/>
-<meta name="Author" content="Chris Thomas"/><head><title>Food Ordering</title><!--i ♥ food!-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"><style type="text/css">
-html, body {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#888;}
+<meta name="Author" content="Chris Thomas"/><head><title>Food Ordering</title><!--i ♥ food!--><style type="text/css">
+html, body {margin:0; padding:0;}
+.main {margin:1em auto; text-align:center; max-width:500px; width:100%;}
 a {color:#00CD66; text-decoration:none;} a:hover {color:#00CD66; text-decoration:underline;}
-.food {float:left; width:50%; height:600px; cursor:pointer; font-size:6em; text-shadow: 1px 1px 0 #ccc;}
-.pizza {background:url(./food/pizza.jpg) no-repeat fixed; background-size:cover;}
-.burger {background:url(./food/burger.jpg) no-repeat fixed right;}
-.burrito {background:url(./food/burrito.jpg) no-repeat fixed center; background-size:cover;}
-.bowl {background:url(./food/burrito_bowl.jpg) no-repeat fixed right; background-size:cover;}
-.chicken {background:url(./food/chicken.jpg) no-repeat fixed center; background-size:cover;}
-.chickwich {background:url(./food/chickenwich.jpg) no-repeat fixed center; background-size:cover;}
-.clnr {background:url(./food/clnr.jpg) no-repeat fixed center; background-size:cover;}
-.nachos {background:url(./food/nachos.jpg) no-repeat fixed center; background-size:cover;}
-.sandwich {background:url(./food/subway_buffalochicken.jpg) no-repeat fixed center; background-size:cover;}
-.taco {background:url(./food/taco.jpg) no-repeat fixed center; background-size:cover;}
+img {border-radius:5px; max-width:400px; width:100%;}
 </style></head><body><div class="main">
-  <div class="food pizza"></div>
-  <div class="food burger"></div>
-  <div class="food burrito"></div>
-  <div class="food bowl"></div>
-  <div class="food taco"></div>
-  <div class="food nachos"></div>
-  <div class="food chicken"></div>
-  <div class="food chickwich"></div>
-  <div class="food sandwich"></div>
-  <div class="food clnr"></div>
-</div></body></html>
+<h1>Go get me some...</h1>
+<img src="">
+</div><script type="text/javascript">
+var food, lent;
+var meat = new Array('http://theuiguru.github.io/food/food/pizza.jpg', 'http://theuiguru.github.io/food/food/burger.jpg', 'http://theuiguru.github.io/food/food/burrito.jpg', 'http://theuiguru.github.io/food/food/burrito_bowl.jpg', 'http://theuiguru.github.io/food/food/chicken.jpg', 'http://theuiguru.github.io/food/food/chickenwich.jpg', 'http://theuiguru.github.io/food/food/clnr.jpg', 'http://theuiguru.github.io/food/food/nachos.jpg', 'http://theuiguru.github.io/food/food/subway_buffalochicken.jpg', 'http://theuiguru.github.io/food/food/taco.jpg');
+var vege = new Array('http://3.bp.blogspot.com/-Ueb8Bylkok8/VMcDbq46ujI/AAAAAAAAAe4/p3nXzY8mx5Y/s1600/sofritas.png', 'https://s-media-cache-ak0.pinimg.com/736x/29/db/f8/29dbf81d215d0bb3c2a445b507a83c6e.jpg');
+var m = Math.floor(Math.random() * meat.length);
+document.querySelector("img").setAttribute('src', meat[m]);
+//var v = Math.floor(Math.random() * vege.length);
+//document.querySelector("img").setAttribute('src', vege[v]);
+</script></body></html>
