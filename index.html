@@ -6,7 +6,7 @@
 *, :before, :after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
 html, body {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; text-align:center; font-size:18px;}
 a {color:#DC143C; text-decoration:none;}
-.food {font-size:5em; color:#fff;} .food a {color:#fff;}
+.food {font-size:5em; color:#fff; height:100vh; background:no-repeat center fixed; background-size:cover;} .food a {color:#fff;}
 .btn {text-shadow:1px 1px 0 #ccc; cursor:pointer; float:left; width:50%; padding:150px 0;}
 .burger {background:url(./assets/food/burger.jpg) no-repeat center; background-size:cover;}
 .pizza {background:url(./assets/food/pizza.jpg) no-repeat center; background-size:cover;}
@@ -21,13 +21,9 @@ footer {color:#333; background:#fdd835;}
 @media only screen and (max-width:1000px) {
   .btn {width:100%; height:100vh;}
 }
-</style></head><body><div class="food">
-  <a href="http://foursquare.com/explore?q=burger" class="btn burger">Burger</a>
-  <a href="http://foursquare.com/explore?q=pizza" class="btn pizza">Pizza</a>
-  <a href="http://foursquare.com/explore?q=taco" class="btn taco">Taco</a>
-  <a href="http://foursquare.com/explore?q=burrito" class="btn burrito">Burrito</a>
-  <a href="http://foursquare.com/explore?q=chicken" class="btn chicken">Chicken</a>
-  <a href="http://foursquare.com/explore?q=nachos" class="btn nachos">Nachos</a>
-  <a href="http://foursquare.com/explore?q=sandwich" class="btn sandwich">Sandwich</a>
-  <a href="http://foursquare.com/explore?q=vegetarian" class="btn vege">Vegetarian</a>
-</div><footer><img src="./assets/poweredBy4sq.png" width="300"></footer><script type="text/javascript"></script></body></html>
+</style></head><body><div class="food"></div><footer><img src="./assets/poweredBy4sq.png" width="300"></footer><script type="text/javascript">
+var foods = ['burger', 'pizza', 'taco', 'burrito', 'chicken', 'nachos', 'sandwich', 'veggie'],
+    b = Math.floor(Math.random() * foods.length),
+    mood = document.querySelector(".food");
+mood.style.backgroundImage = 'url(./assets/food/' + foods[b] + '.jpg)';
+</script></body></html>
