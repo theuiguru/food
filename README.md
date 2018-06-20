@@ -1,5 +1,5 @@
-# food
+# food.ie
 
-food ordering site.
+food mood app.
 
 i'm hungry. that's why i built this.
