@@ -1,7 +1,7 @@
 *, :before, :after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
 html, body {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; text-align:center; font-size:18px;}
 a {color:#DC143C; text-decoration:none;}
-.food {font-size:5em; color:#fff; height:100vh; background:no-repeat center fixed; background-size:cover;} .food a {color:#fff;}
+.food {font-size:5em; color:#fff; height:100vh; background:no-repeat; background-size:cover;} .food a {color:#fff;}
 .btn {text-shadow:1px 1px 0 #ccc; cursor:pointer; float:left; width:50%; padding:150px 0;}
 .burger {background:url(./assets/food/burger.jpg) no-repeat center; background-size:cover;}
 .pizza {background:url(./assets/food/pizza.jpg) no-repeat center; background-size:cover;}
