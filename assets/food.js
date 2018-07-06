@@ -1,4 +1,4 @@
-var foods = ['burger', 'pizza', 'taco', 'burrito', 'chicken', 'nachos', 'sandwich', 'vegetarian'],
+var foods = ['burger', 'pizza', 'taco', 'burrito', 'chicken', 'nachos', 'sandwich', 'vegetarian', 'halal'],
     b = Math.floor(Math.random() * foods.length),
     foodImg = document.querySelector("body"),
     mood = document.getElementById("mood"),
