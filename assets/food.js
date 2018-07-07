@@ -1,5 +1,5 @@
 var foods = ['burger', 'pizza', 'taco', 'burrito', 'chicken', 'nachos', 'sandwich', 'vegetarian', 'halal'],
-	intros = ['You should go to', 'Dude.', 'Definitely time for some', 'Don’t you feel like', 'How about', 'LET’S GET SOME FREAKING', 'Know what would hit the spot?', 'Feels like a day for', 'Why not go to', 'Need somethin healthy. How ’bout', 'Indulge in some', 'What about', 'Hmm…', 'Jonesing for some', 'Let’s treat ourselves to', 'Aren’t you in the mood for', 'Maybe', 'Been a while since you’ve gone to'],
+	intros = ['You should get', 'Dude.', 'Definitely time for some', 'Don’t you feel like getting', 'How about', 'Know what would hit the spot?', 'Feels like a day for', 'Why not get some', 'Need somethin healthy. How ’bout', 'Indulge in', 'What about', 'Hmm…', 'Let’s treat ourselves to', 'Aren’t you in the mood for', 'Maybe', 'Been a while since you’ve gotten'],
     b = Math.floor(Math.random() * foods.length),
     i = Math.floor(Math.random() * intros.length),
     foodImg = document.querySelector("body"),
