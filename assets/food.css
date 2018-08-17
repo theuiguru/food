@@ -7,5 +7,5 @@ a {color:#fff;}
 button.btn {margin-top:100px; padding:20px 50px; background:#ededed; border:1px solid #ededed; border-radius:5px; color:#444444; font-size:30px;}
 footer {color:#333; background:#fdd835; text-align:center;}
 @media only screen and (max-width:400px) {
-	html, body {background-position:center; background-size:cover;}
+	.container {background-position:center; background-size:cover;}
 }
