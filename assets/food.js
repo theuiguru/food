@@ -11,13 +11,3 @@ intro.innerHTML = intros[i];
 food.innerHTML = foods[f];
 button.addEventListener('click', function() { location.reload(); });
 food.addEventListener('click', function() { location.href='https://foursquare.com/explore?q=' + foods[f]; });
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('./service-worker.js')
-    .then(function(registration) {
-      console.log('Service Worker registration successful with scope: ', registration.scope);
-    })
-    .catch(function(err) {
-      console.log('Service Worker registration failed: ', err);
-    });
-}
