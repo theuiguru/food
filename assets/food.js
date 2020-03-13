@@ -7,7 +7,7 @@ function randomFood() {
       intro = document.querySelector('.intro'),
       food = document.querySelector('.food'),
       foodBg = document.querySelector('body');
-  foodBg.style.backgroundImage = 'url(http://theuiguru.github.io/food/assets/food/' + foods[f] + '.jpg)';
+  foodBg.style.backgroundImage = 'url(./assets/food/' + foods[f] + '.jpg)';
   intro.innerHTML = intros[i];
   food.innerHTML = foods[f];
   food.addEventListener('click', () => { location.href='https://foursquare.com/explore?q=' + foods[f]; });
