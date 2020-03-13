@@ -1,10 +1,9 @@
 *, :before, :after {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
 html, body {margin:0; padding:0; font-family:sans-serif; color:#fff; background:no-repeat center fixed; background-size:cover;}
+.main {background:rgba(0,0,0,0.4);}
+.container {height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:10em 0;}
 h1, h2 {font-weight:normal; margin:0;} h1 {font-size:90px;} h2 {font-size:40px;} a {color:#fff;}
-.main {background:rgba(0,0,0,0.4); height:100%; min-height:100vh;}
-.container {display:flex; flex-direction:column; justify-content:center; align-items:center; padding:10em 0;}
-button.btn {margin-top:100px; padding:20px 50px; background:#ededed; border:1px solid #ededed; border-radius:5px; color:#444444; font-size:30px;}
+button {margin-top:50px; padding:20px 50px; background:#eee; border:0; border-radius:5px; color:#444444; font-size:30px;}
+button:hover {background:#ccc;}
+button:focus {outline:0;}
 footer {color:#333; background:#fdd835; text-align:center;}
-@media only screen and (max-width:400px) {
-	html, body {background-size:contain;}
-}
