@@ -8,8 +8,8 @@ function randomFood() {
       food = document.querySelector('.food'),
       foodBg = document.querySelector('body');
   foodBg.style.backgroundImage = 'url(./assets/food/' + foods[f] + '.jpg)';
-  intro.textContent = intros[i];
-  food.textContent = foods[f];
+  intro.innerText = intros[i];
+  food.innerText = foods[f];
   food.setAttribute("href", "https://foursquare.com/explore?q="+foods[f]);
 }
 button.addEventListener('click', randomFood);
