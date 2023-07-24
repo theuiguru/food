@@ -1,3 +1,3 @@
 # food.ie
 
-food mood app.
+a food mood app powered by foursquare maps.
