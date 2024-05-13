@@ -14,3 +14,11 @@ function randomFood() {
 }
 button.addEventListener('click', randomFood);
 randomFood();
+
+// Display the splash screen image.
+const splash = document.querySelector(".splash");
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(() => {
+    splash.classList.add('display-none');
+  }, 500);
+});
