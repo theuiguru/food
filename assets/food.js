@@ -10,7 +10,7 @@ function randomFood() {
   foodBg.style.backgroundImage = 'url(./assets/food/' + foods[f] + '.jpg)';
   intro.textContent = intros[i];
   food.textContent = foods[f];
-  food.setAttribute("href", "https://foursquare.com/explore?q="+foods[f]);
+  food.setAttribute("href", "https://www.google.com/maps/search/"+foods[f]);
 }
 button.addEventListener('click', randomFood);
 randomFood();
