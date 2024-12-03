@@ -18,7 +18,7 @@ function randomFood() {
       foodBg = document.querySelector('body');
   foodBg.style.backgroundImage = 'url(./assets/food/' + seasons[f] + '.jpg)';
   intro.textContent = intros[i];
-  food.textContent = seasonalFoods[f];
+  food.textContent = seasons[f];
   food.setAttribute("href", "https://www.google.com/maps/search/"+seasons[f]);
 }
 button.addEventListener('click', randomFood);
