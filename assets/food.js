@@ -20,6 +20,7 @@ function randomFood() {
   intro.textContent = intros[i];
   food.textContent = seasons[f];
   food.setAttribute("href", "https://www.google.com/maps/search/"+seasons[f]);
+  food.setAttribute("target", "_blank");
 }
 button.addEventListener('click', randomFood);
 randomFood();
