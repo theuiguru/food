@@ -7,10 +7,8 @@ function randomFood() {
   let adventLent = today.getMonth() + 1 === 12 && today.getDate() >= 1 && today.getDate() <= 24;
   let apostlesLent = today.getMonth() + 1 === 6 && today.getDate() >= 16 && today.getDate() <= 28;
   let shoonoyoLent = today.getMonth() + 1 === 8 && today.getDate() >= 1 && today.getDate() <= 15;
-
   let lentenFoods = foods.filter(food => ['vegetarian', 'sandwich', 'burrito', 'taco'].includes(food));
   let seasons = (adventLent || apostlesLent || shoonoyoLent) ? lentenFoods : foods;
-
   let f = Math.floor(Math.random() * seasons.length),
       i = Math.floor(Math.random() * intros.length),
       intro = document.querySelector('.intro'),
